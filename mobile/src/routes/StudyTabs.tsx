@@ -1,6 +1,5 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import { Ionicons } from '@expo/vector-icons'
 
 import Favorites from '../pages/Favorites';
 import TeacherList from '../pages/TeacherList';
@@ -42,11 +41,6 @@ function StudyTabs() {
         component={TeacherList}
         options={{
           tabBarLabel: 'Proffys',
-          tabBarIcon: ({ color, size, focused }) => {
-            return (
-              <Ionicons name="ios-easel" />
-            )
-          }
         }}
         />
         <Screen
@@ -54,11 +48,6 @@ function StudyTabs() {
         component={Favorites}
         options={{
           tabBarLabel: 'Favoritos',
-          tabBarIcon: ({ color, size, focused }) => {
-            return (
-              <Ionicons name="ios-heart"/>
-            )
-          }
         }}
         />
     </Navigator>
